@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #8f6545;
+}
+
+section{
+    display: flex;
+    gap: 100px;
+}
+
+.centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+section p{
+    transition: transform .3s;
+}
+
+section p:hover{
+    transform: scale(1.2);
+}
+
+/*animation*/
+
+.first {
+    animation: appear 2s .5s backwards;
+}
+
+.second{
+    animation: appear 2s 1.2s backwards;
+}
+
+.third{
+    animation: appear 2s 1.9s backwards;
+}
+
+.fourth{
+    animation: appear 2s 2.6s backwards;
+}
+
+@keyframes appear {
+    from{
+        opacity:  0;
+    }
+    to{
+        opacity: 1;
+    }
+}
